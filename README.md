@@ -62,7 +62,7 @@
 
 ------------
 <h4>Comando para rodar o container docker</h4>
-<p align='justify'><strong>O que faz o comando <code>docker compose up</code>?</strong> O Docker Compose é uma ferramenta que permite definir e gerenciar aplicativos Docker compostos por vários contêineres. O arquivo docker-compose.yml descreve a configuração dos serviços, incluindo as imagens dos contêineres, variáveis de ambiente, volumes, portas expostas e outras opções de configuração. Quando você executa o comando`docker-compose up`, o Docker Compose lê o arquivo docker-compose.yml, cria os contêineres necessários com as configurações especificadas e os inicia.</p> 
+<p align='justify'><strong>O que faz o comando <code>docker compose up</code>?</strong> O Docker Compose é uma ferramenta que permite definir e gerenciar aplicativos Docker compostos por vários contêineres. O arquivo docker-compose.yml descreve a configuração dos serviços, incluindo as imagens dos contêineres, variáveis de ambiente, volumes, portas expostas e outras opções de configuração. Quando você executa o comando <code>docker-compose up</code>, o Docker Compose lê o arquivo docker-compose.yml, cria os contêineres necessários com as configurações especificadas e os inicia.</p> 
 
 ------------
 
@@ -83,19 +83,18 @@
 <h4>Criando uma Pipeline com Build em uma aplicação ReactJS utilizando agente Node em Docker</h4>
 
 - Próximos passos:
- - **Crie uma nova tarefa**
-   - Adicione um nome e nas opções selecione **Pipeline**
- - **Nas configurações, mais abaixo em Pipeline:**
-   - Selecione Pipeline script from SCM
-   - Em SCM selecione GIT e insira o link do GIT
-     - Atente-se, no final da URL é necessário que haja .git
-        - Repositório que você pode utilizar como exemplo: https://github.com/rhavymaia/acomidadobebe-landingpage.git
-
- - **Em \_branch to build\_**
-   - Mude de Master para Main
-     - Isso é uma boa prática atualmente
- - **Salve e execute a Pipeline**
-   - Neste repositório exemplo, contém o **Jenkinsfile** com um agente Node no Docker, isso se faz necessário para que a Pipeline execute o ReactJS, tendo em vista que o Jenkins possuí suporte apenas para Java
+  - **Crie uma nova tarefa**
+    - Adicione um nome e nas opções selecione **Pipeline**
+  - **Nas configurações, mais abaixo em Pipeline:**
+    - Selecione Pipeline script from SCM
+    - Em SCM selecione GIT e insira o link do GIT
+      - Repositório que você pode utilizar como exemplo: https://github.com/rhavymaia/acomidadobebe-landingpage.git
+      - Atente-se, no final da URL é necessário que haja .git
+  - **Em \_branch to build\_**
+    - Mude de Master para Main
+      - Isso é uma boa prática atualmente
+  - **Salve e execute a Pipeline**
+    - Neste repositório exemplo, contém o **Jenkinsfile** com um agente Node no Docker, isso se faz necessário para que a Pipeline execute o ReactJS, tendo em vista que o Jenkins possuí suporte apenas para Java
 
 <h4>Configuração do Jenkinsfile</h4>
 
