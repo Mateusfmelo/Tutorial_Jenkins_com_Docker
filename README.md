@@ -4,7 +4,7 @@
 
 ------------
 
-<h4>Primeiros passos</h4>
+<h3>Primeiros passos</h3>
 
 <p align='justify'>Utilizaremos o Dockerfile para construir a imagem Docker. <strong>Mas o que é Dockerfile? </strong>Dockerfile é um arquivo de texto que contém uma série de instruções que definem como construir uma imagem Docker.</p>
 
@@ -60,13 +60,19 @@
 
 <p>Com essas configurações feitas, agora será necessário criar o diretório <strong>jenkins_home</strong> dentro da raíz do projeto, nele será onde a mágica vai acontecer! 😆 </p>
 
-------------
-<h4>Comando para rodar o container docker</h4>
-<p align='justify'><strong>O que faz o comando <code>docker compose up</code>?</strong> O Docker Compose é uma ferramenta que permite definir e gerenciar aplicativos Docker compostos por vários contêineres. O arquivo docker-compose.yml descreve a configuração dos serviços, incluindo as imagens dos contêineres, variáveis de ambiente, volumes, portas expostas e outras opções de configuração. Quando você executa o comando <code>docker-compose up</code>, o Docker Compose lê o arquivo docker-compose.yml, cria os contêineres necessários com as configurações especificadas e os inicia.</p> 
+------------  
+
+<h3>Comando para rodar o container docker</h3>
+<p align='justify'><strong>O que faz o comando <code>docker compose up</code>?</strong> O Docker Compose é uma ferramenta que permite definir e gerenciar aplicativos Docker compostos por vários contêineres. O arquivo docker-compose.yml descreve a configuração dos serviços, incluindo as imagens dos contêineres, variáveis de ambiente, volumes, portas expostas e outras opções de configuração. Quando você executa o comando <code>docker-compose up</code>, o Docker Compose lê o arquivo docker-compose.yml, cria os contêineres necessários com as configurações especificadas e os inicia.</p>    
+
+------------  
+
+<h3> Antes de prosseguir, vamos falar um pouco sobre o Jenkins</h3>
+<p align='justify'>Jenkins é uma ferramenta de automação de código aberto amplamente utilizada no desenvolvimento de software. Ela é usada para automatizar várias etapas do ciclo de vida do desenvolvimento, incluindo integração contínua, entrega contínua e implantação contínua (CI/CD). A integração contínua envolve a integração frequente de código de vários desenvolvedores em um repositório central. Com o Jenkins, você pode configurar tarefas automatizadas para compilar, testar e analisar o código sempre que houver uma alteração no repositório. Isso ajuda a identificar rapidamente problemas de integração e erros de código. Além disso, o Jenkins possui um amplo ecossistema de plugins que oferecem funcionalidades adicionais e integrações com outras ferramentas e serviços populares. Ele é altamente flexível e pode ser personalizado para atender às necessidades específicas de cada equipe de desenvolvimento.</p>   
 
 ------------
 
-<h4>No navegador, utilize o [localhost:8080](localhost:8080) para acessar o Jenkins</h4>  
+<h3>No navegador, utilize o localhost:8080 para acessar o Jenkins</h3>  
 
 - Próximos passos:
   - **Utilize a chave de acesso para desbloquear o Jenkins**
@@ -80,7 +86,7 @@
 
 ------------
 
-<h4>Criando uma Pipeline com Build em uma aplicação ReactJS utilizando agente Node em Docker</h4>
+<h3>Criando uma Pipeline com Build em uma aplicação ReactJS utilizando agente Node em Docker</h3>
 
 - Próximos passos:
   - **Crie uma nova tarefa**
@@ -96,7 +102,7 @@
   - **Salve e execute a Pipeline**
     - Neste repositório exemplo, contém o **Jenkinsfile** com um agente Node no Docker, isso se faz necessário para que a Pipeline execute o ReactJS, tendo em vista que o Jenkins possuí suporte apenas para Java
 
-<h4>Configuração do Jenkinsfile</h4>
+<h3>Configuração do Jenkinsfile</h3>
 
     pipeline {
         agent {
