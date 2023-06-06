@@ -63,7 +63,7 @@
 ------------  
 
 <h3>Comando para rodar o container docker</h3>
-<p align='justify'><strong>O que faz o comando <code>docker compose up</code>?</strong> O Docker Compose é uma ferramenta que permite definir e gerenciar aplicativos Docker compostos por vários contêineres. O arquivo docker-compose.yml descreve a configuração dos serviços, incluindo as imagens dos contêineres, variáveis de ambiente, volumes, portas expostas e outras opções de configuração. Quando você executa o comando <code>docker-compose up</code>, o Docker Compose lê o arquivo docker-compose.yml, cria os contêineres necessários com as configurações especificadas e os inicia.</p>    
+<p align='justify'><strong>O que faz o comando <code>docker compose up</code>?</strong> O Docker Compose é uma ferramenta que permite definir e gerenciar aplicativos Docker compostos por vários contêineres. O arquivo docker-compose.yml descreve a configuração dos serviços, incluindo as imagens dos contêineres, variáveis de ambiente, volumes, portas expostas e outras opções de configuração. Quando você executa o comando <code>docker compose up</code>, o Docker Compose lê o arquivo docker-compose.yml, cria os contêineres necessários com as configurações especificadas e os inicia.</p>    
 
 ------------  
 
